@@ -1,0 +1,7 @@
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\bin\Debug\UskoKruM2010_Consola.exe.config
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\bin\Debug\UskoKruM2010_Consola.exe
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\bin\Debug\UskoKruM2010_Consola.pdb
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\obj\Debug\UskoKruM2010_Consola.csprojAssemblyReference.cache
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\obj\Debug\UskoKruM2010_Consola.csproj.CoreCompileInputs.cache
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\obj\Debug\UskoKruM2010_Consola.exe
+C:\Users\USKOKRUM\source\repos\UskoKruM2010_Consola\obj\Debug\UskoKruM2010_Consola.pdb
