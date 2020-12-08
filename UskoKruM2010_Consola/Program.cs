@@ -227,6 +227,74 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(texto);
             */
 
+            /*
+            Console.WriteLine(default(int)); // 0
+            Console.WriteLine(default(float)); // 0
+            Console.WriteLine(default(char)); // Caracter "vacío"
+            Console.WriteLine(default(double)); // 0
+
+            Console.WriteLine(default(object)); // null
+            Console.WriteLine(default(string)); // null
+            Console.WriteLine(default(DateTime)); // 01/01/0001 00:00:00
+
+            Console.WriteLine(default(string) == null); // Comparación
+            */
+
+            // sizeof: Retorna el número de bytes que ocupa cada tipo de dato.
+            /*
+            Console.WriteLine(sizeof(bool)); // 1
+            Console.WriteLine(sizeof(byte)); // Returns 1.
+            Console.WriteLine(sizeof(sbyte)); // Returns 1.
+            Console.WriteLine(sizeof(char)); // Returns 2.
+            Console.WriteLine(sizeof(short)); // Returns 2.
+            Console.WriteLine(sizeof(ushort)); // Returns 2.
+            Console.WriteLine(sizeof(int)); // Returns 4.
+            Console.WriteLine(sizeof(uint)); // Returns 4.
+            Console.WriteLine(sizeof(float)); // Returns 4.
+            Console.WriteLine(sizeof(long)); // Returns 8.
+            Console.WriteLine(sizeof(ulong)); // Returns 8.
+            Console.WriteLine(sizeof(double)); // Returns 8.
+            Console.WriteLine(sizeof(decimal)); // Returns 16.
+            */
+
+            /*
+            // Clase Math y sus funcionalidades:
+            Console.WriteLine(Math.Max(45.12, 45.61));
+            Console.WriteLine(Math.Min(45.12, 45.61));
+
+            Console.WriteLine(Math.Pow(5, 3));
+
+            Console.WriteLine(Math.Sqrt(17));
+
+            Console.WriteLine(Math.PI);
+
+            double numero = 3.0001681;
+            Console.WriteLine(Math.Round(numero)); // Evalúa el redondeo.
+            Console.WriteLine(Math.Ceiling(numero)); // Hacia arriba
+            Console.WriteLine(Math.Floor(numero)); // Hacia abajo
+
+            Console.WriteLine(Math.Abs(-123));
+            */
+
+            string texto1 = "Hola ", texto2 = "Mundo!";
+            int edad = 28;
+            Console.WriteLine(texto1 + texto2 + " " + edad);
+
+            String resultado = texto1 + texto2;
+            Console.WriteLine(resultado);
+
+            String miTexto;
+            miTexto = String.Concat(texto1, texto2);
+            Console.WriteLine(miTexto);
+
+            String miTexto2;
+            miTexto2 = $"{texto1}{texto2}";
+            Console.WriteLine(miTexto2);
+
+            String miTexto3 = String.Format("{0}{1}", texto1, texto2);
+            Console.WriteLine(miTexto3);
+
+            Console.WriteLine("{0}{1}", texto1, texto2);
         }
     }
 }
