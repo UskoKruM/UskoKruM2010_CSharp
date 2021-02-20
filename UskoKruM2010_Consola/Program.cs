@@ -6,17 +6,31 @@ namespace UskoKruM2010_Consola
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hola Mundo!");
-            // Aquí voy a imprimir el nombre de mi canal:
-            /*
-            Console.WriteLine("UskoKruM2010");
+            // -----------------------------------------------------------------
+            // 3. Creación de Primer Proyecto & Hola Mundo en Consola
+            // -----------------------------------------------------------------
+            // Console.WriteLine("UskoKruM2010");
 
+            // -----------------------------------------------------------------
+            // 5. Comentarios en C Sharp (Única Línea y Multilínea)
+            // -----------------------------------------------------------------
+
+            // Console.WriteLine("Hola Mundo!");
+            // Aquí voy a imprimir el nombre de mi canal:
+            // Console.WriteLine("UskoKruM2010");
+
+            /*
             Console.WriteLine("aaa");
             Console.WriteLine("bbb");
             Console.WriteLine("ccc");
 
             Console.WriteLine("Suscríbete!");
             */
+
+            // -----------------------------------------------------------------
+            // 6. Tipos de Datos Primitivos y Declaración e Inicialización de Variables
+            // -----------------------------------------------------------------
+
             /*
             int edad; // Declarando una variable.
             edad = 31; // Asignando un valor a la variable.
@@ -59,6 +73,10 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(esMayorDeEdad);
             */
 
+            // -----------------------------------------------------------------
+            // 7. Inicialización Múltiple de Variables y Constantes
+            // -----------------------------------------------------------------
+
             /*
             int p1, p2, p3, p4;
             p1 = p2 = p3 = p4 = 21;
@@ -80,6 +98,10 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(edadActual);
             */
 
+            // -----------------------------------------------------------------
+            // 8. VAR y DYNAMIC | Comparación y Diferencias
+            // -----------------------------------------------------------------
+
             /*
             var peso = 85;
             Console.WriteLine(peso);
@@ -95,6 +117,10 @@ namespace UskoKruM2010_Consola
             nombre = 'O';
             Console.WriteLine(nombre);
             */
+
+            // -----------------------------------------------------------------
+            // 9. Casting Conversiones Implícitas e Explícitas
+            // -----------------------------------------------------------------
 
             // Implítica: Entre tipos de datos compatibles, de diferente alcance.
 
@@ -121,7 +147,9 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(miDouble);
             */
 
-            // Operadores matemáticos:
+            // -----------------------------------------------------------------
+            // 10. Operadores Matemáticos y Operadores de Incremento y Decremento
+            // -----------------------------------------------------------------
 
             // +, -, *, /, %
             // int numero1 = 17,numero2=4;
@@ -163,7 +191,9 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(++m);
             */
 
-            // Operadores Lógicos:
+            // -----------------------------------------------------------------
+            // 11. Operadores Lógicos (AND %%, OR , NOT y OR Exclusivo)
+            // -----------------------------------------------------------------
 
             // bool a = true, b = false;
 
@@ -196,7 +226,9 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(a ^ a);
             */
 
-            // Operadores comparativos:
+            // -----------------------------------------------------------------
+            // 12. Operadores Comparativos (Comparación de Valores)
+            // -----------------------------------------------------------------
 
             /*
             int n1=12, n2=12;
@@ -216,7 +248,9 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(numero.Equals(num));
             */
 
-            // Operador ternario:
+            // -----------------------------------------------------------------
+            // 13. Operador Ternario en C#
+            // -----------------------------------------------------------------
 
             /*
             int edad = 14;
@@ -226,6 +260,10 @@ namespace UskoKruM2010_Consola
             String texto = ((sexo == 'M') ? "Masculino" : "Femenino");
             Console.WriteLine(texto);
             */
+
+            // -----------------------------------------------------------------
+            // 14. Funciones default (Valor por Defecto) y sizeof (Tamaño en Bytes)
+            // -----------------------------------------------------------------
 
             /*
             Console.WriteLine(default(int)); // 0
@@ -257,6 +295,10 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(sizeof(decimal)); // Returns 16.
             */
 
+            // -----------------------------------------------------------------
+            // 15. Clase Math Funciones Matemáticas Predefinidas
+            // -----------------------------------------------------------------
+
             /*
             // Clase Math y sus funcionalidades:
             Console.WriteLine(Math.Max(45.12, 45.61));
@@ -276,6 +318,11 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(Math.Abs(-123));
             */
 
+            // -----------------------------------------------------------------
+            // 16. Concatenación (Unión de texto y variables) en C Sharp
+            // -----------------------------------------------------------------
+
+            /*
             string texto1 = "Hola ", texto2 = "Mundo!";
             int edad = 28;
             Console.WriteLine(texto1 + texto2 + " " + edad);
@@ -295,6 +342,85 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(miTexto3);
 
             Console.WriteLine("{0}{1}", texto1, texto2);
+            */
+
+            // -----------------------------------------------------------------
+            // 17. Estructura decisiva IF - ELSE
+            // -----------------------------------------------------------------
+
+            /*
+            int edad = 18;
+            if (edad >= 18) {
+                Console.WriteLine("Ya eres mayor de edad.");
+            } else {
+                Console.WriteLine("Aún eres menor de edad.");
+                Console.WriteLine("Tienes menos de 18 años.");
+            }
+
+            char sexo = 'F';
+            if (sexo == 'F') {
+                Console.WriteLine("Tu sexo es: femenino.");
+            } else {
+                Console.WriteLine("Tu sexo es: masculino.");
+            }
+            */
+
+            // -----------------------------------------------------------------
+            // 18. IF - ELSE anidados
+            // -----------------------------------------------------------------
+
+            /*
+            int nota = 11;
+            if (nota > 11) {
+                Console.WriteLine("Aprobado");
+            } else if (nota == 11) {
+                Console.WriteLine("Aprobaste con mucho riesgo!!!");
+            } else {
+                Console.WriteLine("Desaprobado");
+            }
+            */
+
+            /*
+            int promedio = 16;
+
+            if (promedio >= 17) {
+                Console.WriteLine("Excelente");
+            } else if (promedio >= 11) {
+                Console.WriteLine("Aprobado");
+            } else {
+                if (promedio >= 8) {
+                    Console.WriteLine("Puede ir a recuperación");
+                } else {
+                    Console.WriteLine("Desaprobado definitivamente");
+                }
+            }
+            */
+
+            // -----------------------------------------------------------------
+            // 19. Lectura de datos por teclado
+            // -----------------------------------------------------------------
+
+            /*
+            String nombre;
+            Console.WriteLine("Ingrese su nombre completo: ");
+            nombre = Console.ReadLine();
+            Console.WriteLine(nombre);
+            Console.WriteLine("Longitud: {0}", nombre.Length);
+            */
+
+            /*
+            int edad;
+            Console.WriteLine("Ingrese su edad: ");
+            edad = int.Parse(Console.ReadLine());
+            Console.WriteLine(edad);
+            Console.WriteLine(edad + 17);
+            */
+
+            double sueldo;
+            Console.WriteLine("Ingrese sueldo: ");
+            sueldo = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(sueldo);
+
         }
     }
 }
