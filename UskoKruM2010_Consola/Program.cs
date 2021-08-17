@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Text;
 
 namespace UskoKruM2010_Consola
 {
     class Program
     {
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             // -----------------------------------------------------------------
             // 3. Creación de Primer Proyecto & Hola Mundo en Consola
             // -----------------------------------------------------------------
@@ -416,11 +416,259 @@ namespace UskoKruM2010_Consola
             Console.WriteLine(edad + 17);
             */
 
+            /*
             double sueldo;
             Console.WriteLine("Ingrese sueldo: ");
             sueldo = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine(sueldo);
+            */
 
+            // -----------------------------------------------------------------
+            // 20. Funciones typeof, nameof y Operador de Coalescencia
+            // -----------------------------------------------------------------
+
+            // typeof
+            /*
+            Console.WriteLine(typeof(String));
+            Console.WriteLine(typeof(int));
+            Console.WriteLine(typeof(double));
+            Console.WriteLine(typeof(bool));
+            */
+
+            // nameof
+            /*
+            int edadPersona = 21;
+            Console.WriteLine(nameof(edadPersona));
+            String nombreVariable = nameof(edadPersona);
+            Console.WriteLine(nombreVariable);
+            */
+
+            // Operador de coalescencia
+            // NULL: Ausencia de un valor.
+            /*
+            String d = "UskoKruM2010";
+            Console.WriteLine((d == null) ? "NULL" : "No es nulo");
+
+            if (d == null) {
+                Console.WriteLine("El string indicado es: no provisto");
+            } else {
+                Console.WriteLine("El string especificado es: " + d);
+            }
+
+            // Si el valor del primer operando es nulo (NULL), entonces el operador 
+            // devuelve el valor del segundo operando; de lo contrario, devuelve el 
+            // valor del primer operando.
+
+            Console.WriteLine("El string indicado es: " + (d ?? "no provisto"));
+
+            double? num1 = null;
+            double? num2 = 5.891;
+            double num3;
+
+            num3 = num1 ?? 25.61;
+            Console.WriteLine(num3);
+
+            num3 = num2 ?? 10.51;
+            Console.WriteLine(num3);
+            */
+
+            // -----------------------------------------------------------------
+            // 21. Literales de cadenas textuales (Verbatim Strings Literals)
+            // -----------------------------------------------------------------
+
+            /*
+            String texto = $@"Párrafo de varias líneas: 1 - 2 - {10 - 3} 
+                Esta es una nueva línea 
+                Y esta es otra :)";
+            Console.WriteLine(texto);
+
+            // "No estoy de acuerdo", ella mencionó.
+            String texto2 = @"""No estoy de acuerdo"", ella mencionó.";
+            Console.WriteLine(texto2);
+
+            // String nombreArchivo = "C:\temp\nuevo_archivo.txt";
+            String nombreArchivo = @"C:\temp\nuevo_archivo.txt";
+            Console.WriteLine(nombreArchivo);
+
+            var multiLinea = @"Este es 
+un 
+párrafo!";
+            Console.WriteLine(multiLinea);
+            */
+
+            // -----------------------------------------------------------------
+            // 22. Bucle While
+            // -----------------------------------------------------------------
+
+            /*
+            int a = 3;
+            while (a < 10) {
+                Console.WriteLine("Valor actual: {0}", a);
+                a++;
+            }
+
+            int b = 20;
+            while (b >= 5) {
+                Console.WriteLine("Valor actual: {0}", b);
+                b-=3;
+            }
+            Console.WriteLine("El bucle ha terminado.");
+            */
+
+            // -----------------------------------------------------------------
+            // 23. Bucle Do While
+            // -----------------------------------------------------------------
+
+            /*
+            int x = 20;
+            do {
+                Console.WriteLine("Valor actual: {0}", x);
+            } while (x < 10);
+
+            double estatura, alturaMaxima = 1.75;
+            do {
+                Console.WriteLine("Ingrese su estatura: ");
+                estatura = Convert.ToDouble(Console.ReadLine());
+                if (estatura > alturaMaxima) {
+                    Console.WriteLine("Altura máxima: {0} metros.", alturaMaxima);
+                }
+            } while (estatura > alturaMaxima);
+
+            double nota;
+            do {
+                Console.WriteLine("Ingrese un nota: ");
+                nota = Convert.ToDouble(Console.ReadLine());
+                if (nota < 0 || nota > 20) {
+                    Console.WriteLine("Nota fuera rango...");
+                }
+            } while (nota < 0 || nota > 20);
+            */
+
+            // -----------------------------------------------------------------
+            // 24. Bucle For
+            // -----------------------------------------------------------------
+
+            /*
+            for(int x = 1; x <= 10; x++) {
+                Console.WriteLine(x);
+            }
+            */
+
+            /*
+            for(int a = 100; a >= 20; a -= 3) {
+                Console.WriteLine("Valor actual: {0}", a);
+            }
+            */
+
+            /*
+            for(int p = 1; p <= 5; p++) {
+                Console.WriteLine("Ingrese valor {0}", p);
+                int valor = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Valor ingresado: {0}", valor);
+            }
+            */
+
+            /*
+            for(; ; ) {
+                Console.WriteLine("Holaaaa");
+            }
+            */
+
+            // -----------------------------------------------------------------
+            // 25. Break - Continue
+            // -----------------------------------------------------------------
+
+            // Break:
+            /*
+            for(int a = 16; a <= 35; a++) {
+                Console.WriteLine("Valor actual: {0}", a);
+                if ((a % 7) == 0) {
+                    Console.WriteLine("{0} es el primer múltiplo de 7 encontrado!",a);
+                    break; // Termina el bucle.
+                }
+            }
+            */
+
+            // Continue:
+            /*
+            int contador = 0;
+
+            do {
+                if ((contador % 5) == 0) {
+                    contador++;
+                    continue; // Salta la iteración.
+                }
+                Console.WriteLine("Valor: {0}", contador);
+                contador++;
+            } while (contador <= 30);
+            */
+
+            // -----------------------------------------------------------------
+            // 26. Vectores Unidimensionales
+            // -----------------------------------------------------------------
+
+            /*
+            // int edad1, edad2, edad3, edad4, edad5;
+            // int[] edades; // Vector de enteros (declaración).
+            int[] edades = new int[5];
+            edades[1] = 35;
+            edades[2] = 21;
+            Console.WriteLine(edades[2]);
+            // Console.WriteLine(edades[9]);
+
+            double[] sueldos = new double[3] { 620.50, 456.91, 190.91 };
+            Console.WriteLine(sueldos);
+
+            for(int x = 0; x < sueldos.Length; x++) {
+                Console.WriteLine(sueldos[x]);
+            }
+
+            String[] lenguajes = new String[4] { "PHP", "Python", "C#", "JavaScript" };
+            Console.WriteLine(lenguajes[3]);
+            lenguajes[3] = "Kotlin";
+            Console.WriteLine(lenguajes[3]);
+
+            var vector = new[] { 1, 5, 19 };
+            Console.WriteLine(vector[1]);
+            */
+
+            // -----------------------------------------------------------------
+            // 27. Vectores Paralelos
+            // -----------------------------------------------------------------
+
+            int numeroElementos = 3;
+            String[] nombres = new String[numeroElementos];
+            // Variables auxiliares para leer la edad y la estatura:
+            String edad = "", estatura = "";
+            int[] edades = new int[numeroElementos];
+            double[] estaturas = new double[numeroElementos];
+
+            for (int a = 0; a < numeroElementos; a++) {
+                do {
+                    Console.WriteLine("Ingrese nombre {0}:", (a + 1));
+                    nombres[a] = Console.ReadLine();
+                    if (nombres[a].Length == 0) {
+                        Console.WriteLine("El nombre no puede estar vacío...");
+                    }
+                } while (nombres[a].Length == 0);
+                
+                do {
+                    Console.WriteLine("Ingrese edad {0}:", (a + 1));
+                    edad = Console.ReadLine();
+                } while (int.TryParse(edad, out edades[a]));
+                // int.TryParse: Intenta convertir un String a entero.
+                // Si puede hacerlo, lo asignará en 'edades[a]'.
+
+                do {
+                    Console.WriteLine("Ingrese estatura {0}:", (a + 1));
+                    estatura = Console.ReadLine();
+                } while (double.TryParse(estatura, out estaturas[a]));                
+            }
+
+            for (int u = 0; u < numeroElementos; u++) {
+                Console.WriteLine("Nombre: {0} | Edad: {1} años | Estatura: {2} mts.",
+                    nombres[u], edades[u], estaturas[u]);
+            }
         }
     }
 }
