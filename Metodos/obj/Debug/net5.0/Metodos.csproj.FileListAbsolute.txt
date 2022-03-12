@@ -1,0 +1,16 @@
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.exe
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.deps.json
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.runtimeconfig.json
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.runtimeconfig.dev.json
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.dll
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\ref\Metodos.dll
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\bin\Debug\net5.0\Metodos.pdb
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.csproj.AssemblyReference.cache
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.AssemblyInfoInputs.cache
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.AssemblyInfo.cs
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.csproj.CoreCompileInputs.cache
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.dll
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\ref\Metodos.dll
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.pdb
+C:\Users\USKOKRUM\Desktop\YouTube\Repos\UskoKruM2010_CSharp\Metodos\obj\Debug\net5.0\Metodos.genruntimeconfig.cache
