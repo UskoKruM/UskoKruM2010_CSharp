@@ -1,11 +1,11 @@
-﻿using System;
-using System.Text;
-
-namespace UskoKruM2010_Consola
+﻿namespace UskoKruM2010_Consola
 {
+    using System;
+
     class Program
     {
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             // -----------------------------------------------------------------
             // 3. Creación de Primer Proyecto & Hola Mundo en Consola
             // -----------------------------------------------------------------
@@ -643,29 +643,35 @@ párrafo!";
             int[] edades = new int[numeroElementos];
             double[] estaturas = new double[numeroElementos];
 
-            for (int a = 0; a < numeroElementos; a++) {
-                do {
+            for (int a = 0; a < numeroElementos; a++)
+            {
+                do
+                {
                     Console.WriteLine("Ingrese nombre {0}:", (a + 1));
                     nombres[a] = Console.ReadLine();
-                    if (nombres[a].Length == 0) {
+                    if (nombres[a].Length == 0)
+                    {
                         Console.WriteLine("El nombre no puede estar vacío...");
                     }
                 } while (nombres[a].Length == 0);
-                
-                do {
+
+                do
+                {
                     Console.WriteLine("Ingrese edad {0}:", (a + 1));
                     edad = Console.ReadLine();
                 } while (int.TryParse(edad, out edades[a]));
                 // int.TryParse: Intenta convertir un String a entero.
                 // Si puede hacerlo, lo asignará en 'edades[a]'.
 
-                do {
+                do
+                {
                     Console.WriteLine("Ingrese estatura {0}:", (a + 1));
                     estatura = Console.ReadLine();
-                } while (double.TryParse(estatura, out estaturas[a]));                
+                } while (double.TryParse(estatura, out estaturas[a]));
             }
 
-            for (int u = 0; u < numeroElementos; u++) {
+            for (int u = 0; u < numeroElementos; u++)
+            {
                 Console.WriteLine("Nombre: {0} | Edad: {1} años | Estatura: {2} mts.",
                     nombres[u], edades[u], estaturas[u]);
             }

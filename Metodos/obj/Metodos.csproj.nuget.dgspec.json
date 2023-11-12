@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\Repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj": {}
+    "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\Repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj": {
+    "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\Repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj",
+        "projectUniqueName": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj",
         "projectName": "Metodos",
-        "projectPath": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\Repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj",
+        "projectPath": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\repos\\UskoKruM2010_CSharp\\Metodos\\Metodos.csproj",
         "packagesPath": "C:\\Users\\USKOKRUM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\Repos\\UskoKruM2010_CSharp\\Metodos\\obj\\",
+        "outputPath": "C:\\Users\\USKOKRUM\\Desktop\\YouTube\\repos\\UskoKruM2010_CSharp\\Metodos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\USKOKRUM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
