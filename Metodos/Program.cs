@@ -4,7 +4,6 @@ namespace Metodos
 {
     class Program
     {
-
         static void Saludar()
         {
             Console.WriteLine("Hola! Estoy siendo llamado desde un método!");
@@ -56,7 +55,6 @@ namespace Metodos
             Despedir("Oscar");
             Despedir("Karen");
             */
-
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace UskoKruM2010_Consola
 {
     using System;
+    using System.Text;
 
     class Program
     {
@@ -637,9 +638,9 @@ párrafo!";
             // -----------------------------------------------------------------
 
             int numeroElementos = 3;
-            String[] nombres = new String[numeroElementos];
+            string[] nombres = new string[numeroElementos];
             // Variables auxiliares para leer la edad y la estatura:
-            String edad = "", estatura = "";
+            string edad = "", estatura = "";
             int[] edades = new int[numeroElementos];
             double[] estaturas = new double[numeroElementos];
 
@@ -659,7 +660,7 @@ párrafo!";
                 {
                     Console.WriteLine("Ingrese edad {0}:", (a + 1));
                     edad = Console.ReadLine();
-                } while (int.TryParse(edad, out edades[a]));
+                } while (!int.TryParse(edad, out edades[a]));
                 // int.TryParse: Intenta convertir un String a entero.
                 // Si puede hacerlo, lo asignará en 'edades[a]'.
 
@@ -667,7 +668,7 @@ párrafo!";
                 {
                     Console.WriteLine("Ingrese estatura {0}:", (a + 1));
                     estatura = Console.ReadLine();
-                } while (double.TryParse(estatura, out estaturas[a]));
+                } while (!double.TryParse(estatura, out estaturas[a]));
             }
 
             for (int u = 0; u < numeroElementos; u++)
@@ -675,6 +676,8 @@ párrafo!";
                 Console.WriteLine("Nombre: {0} | Edad: {1} años | Estatura: {2} mts.",
                     nombres[u], edades[u], estaturas[u]);
             }
+
+            Console.ReadLine();
         }
     }
 }

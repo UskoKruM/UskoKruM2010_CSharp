@@ -1,4 +1,7 @@
-﻿// -----------------------------------------------------------------
+﻿using Consola_NET7.Clases;
+using System.Text;
+
+// -----------------------------------------------------------------
 // 31. Métodos de Cadenas [01]
 // -----------------------------------------------------------------
 
@@ -54,11 +57,11 @@ for (int i = 0; i < palabras.Length; i++)
 // 33. StringBuilder
 // -----------------------------------------------------------------
 
-using System.Text;
-
+/*
 string miFrase = "C#";
 miFrase += " es un gran lenguaje de programación.";
 Console.WriteLine(miFrase);
+*/
 
 /*
     - 1. Se crea una nueva colección de caracteres con longitud igual
@@ -77,9 +80,7 @@ while (contador < 10000)
     miFrase += "X";
     contador++;
 }
-*/
 
-/*
 StringBuilder miStringBuilder = new();
 int contador2 = 0;
 while (contador2 < 10000)
@@ -89,9 +90,85 @@ while (contador2 < 10000)
 }
 
 Console.WriteLine(miStringBuilder.ToString());
-*/
 
 StringBuilder miStringBuilder2 = new(5000);
 miStringBuilder2.Append("Ok");
 string miString = miStringBuilder2.ToString();
 Console.WriteLine(miString);
+
+*/
+
+// -----------------------------------------------------------------
+// 34. POO (Programación Orientada a Objetos) [01]
+// -----------------------------------------------------------------
+
+/*
+Casa casa1; // Instancia, objeto o ejemplar de la clase 'Casa'.
+
+casa1 = new(); // Inicialización del objeto 'casa1'.
+
+casa1.Direccion = "Los Pinos 123";
+
+Casa casa2 = new();
+
+casa2.Direccion = "La Florida 192";
+
+Console.WriteLine(casa1);
+Console.WriteLine(casa1.Direccion);
+Console.WriteLine(casa2.Direccion);
+*/
+
+// -----------------------------------------------------------------
+// 35. POO (Programación Orientada a Objetos) [02]
+// -----------------------------------------------------------------
+
+/*
+Casa casa1 = new()
+{
+    Direccion = "Los Pinos 123",
+    NumeroHabitaciones = 4,
+    Disponible = true
+};
+
+Casa casa2 = new()
+{
+    Direccion = "La Florida 934",
+    NumeroHabitaciones = 3,
+    Disponible = false
+};
+
+Console.WriteLine(casa1.MostrarDisponibilidad());
+Console.WriteLine(casa2.MostrarDisponibilidad());
+
+Console.WriteLine(casa1.VerificarCapacidad(6));
+Console.WriteLine(casa2.VerificarCapacidad(1));
+
+casa2.Disponible = true;
+
+Console.WriteLine(casa2.MostrarDisponibilidad());
+*/
+
+// -----------------------------------------------------------------
+// 36. POO (Programación Orientada a Objetos) [03] Constructores
+// -----------------------------------------------------------------
+
+/*
+Programador programador1 = new("UskoKruM2010", 31);
+Programador programador2 = new("PildorasInformaticas", 38);
+
+Console.WriteLine(programador1.MostrarDatos());
+Console.WriteLine(programador2.MostrarDatos());
+
+Console.WriteLine(programador1.Nombre + " | " + programador1.Edad);
+Console.WriteLine(programador2.Nombre + " | " + programador2.Edad);
+
+Console.WriteLine(programador1.Lenguajes);
+Console.WriteLine(programador2.Lenguajes);
+*/
+
+// -----------------------------------------------------------------
+// 37. POO (Programación Orientada a Objetos) [04] Encapsulamiento
+// -----------------------------------------------------------------
+
+Programador programador1 = new("UskoKruM2010", 31);
+Programador programador2 = new("PildorasInformaticas", 38);
